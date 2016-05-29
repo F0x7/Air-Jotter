@@ -130,21 +130,29 @@
     return 50;
 }
 
+- (UIImage *)imageWithImage:(UIImage *)image convertToSize:(CGSize)size {
+    UIGraphicsBeginImageContext(size);
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *destImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return destImage;
+}
+
 - (void) configureCell:(GBTaskCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
     Task* task  = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     cell.nameLable.text = [task.name description];
     
-    if (![task.timeStamp description]) {
+    if (![task.timeStamp description] || [task.timeStamp compare:[NSDate date]] == NSOrderedAscending) {
         cell.alarmView.image = nil;
     } else {
-        cell.alarmView.image = [UIImage imageNamed: @"alarmCell.png"];
+        cell.alarmView.image = [UIImage imageNamed: @"Times and Dates.png"];
     }
     if (!task.priority || [task.priority integerValue] == 0) {
         cell.statusTaskImageView.image = nil;
     } else {
-        cell.statusTaskImageView.image = [UIImage imageNamed:@"redPin.png"];
+        cell.statusTaskImageView.image = [UIImage imageNamed:@"redPin"];
     }
     
     cell.delegate = self;
