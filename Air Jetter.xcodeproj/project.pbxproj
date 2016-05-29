@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98FDC6421CFB0CF300FA41F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FDC6411CFB0CF300FA41F6 /* main.m */; };
+		98FDC6451CFB0CF300FA41F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FDC6441CFB0CF300FA41F6 /* AppDelegate.m */; };
+		98FDC6481CFB0CF300FA41F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FDC6471CFB0CF300FA41F6 /* ViewController.m */; };
+		98FDC64B1CFB0CF300FA41F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FDC6491CFB0CF300FA41F6 /* Main.storyboard */; };
+		98FDC64E1CFB0CF300FA41F6 /* Air_Jetter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98FDC64C1CFB0CF300FA41F6 /* Air_Jetter.xcdatamodeld */; };
+		98FDC6501CFB0CF300FA41F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FDC64F1CFB0CF300FA41F6 /* Assets.xcassets */; };
+		98FDC6531CFB0CF300FA41F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FDC6511CFB0CF300FA41F6 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		98FDC63D1CFB0CF300FA41F6 /* Air Jetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Jetter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FDC6411CFB0CF300FA41F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98FDC6431CFB0CF300FA41F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98FDC6441CFB0CF300FA41F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98FDC6461CFB0CF300FA41F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		98FDC6471CFB0CF300FA41F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		98FDC64A1CFB0CF300FA41F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98FDC64D1CFB0CF300FA41F6 /* Air_Jetter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Air_Jetter.xcdatamodel; sourceTree = "<group>"; };
+		98FDC64F1CFB0CF300FA41F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98FDC6521CFB0CF300FA41F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98FDC6541CFB0CF300FA41F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98FDC63A1CFB0CF300FA41F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98FDC6341CFB0CF300FA41F6 = {
+			isa = PBXGroup;
+			children = (
+				98FDC63F1CFB0CF300FA41F6 /* Air Jetter */,
+				98FDC63E1CFB0CF300FA41F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98FDC63E1CFB0CF300FA41F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98FDC63D1CFB0CF300FA41F6 /* Air Jetter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98FDC63F1CFB0CF300FA41F6 /* Air Jetter */ = {
+			isa = PBXGroup;
+			children = (
+				98FDC6431CFB0CF300FA41F6 /* AppDelegate.h */,
+				98FDC6441CFB0CF300FA41F6 /* AppDelegate.m */,
+				98FDC6461CFB0CF300FA41F6 /* ViewController.h */,
+				98FDC6471CFB0CF300FA41F6 /* ViewController.m */,
+				98FDC6491CFB0CF300FA41F6 /* Main.storyboard */,
+				98FDC64F1CFB0CF300FA41F6 /* Assets.xcassets */,
+				98FDC6511CFB0CF300FA41F6 /* LaunchScreen.storyboard */,
+				98FDC6541CFB0CF300FA41F6 /* Info.plist */,
+				98FDC64C1CFB0CF300FA41F6 /* Air_Jetter.xcdatamodeld */,
+				98FDC6401CFB0CF300FA41F6 /* Supporting Files */,
+			);
+			path = "Air Jetter";
+			sourceTree = "<group>";
+		};
+		98FDC6401CFB0CF300FA41F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98FDC6411CFB0CF300FA41F6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98FDC63C1CFB0CF300FA41F6 /* Air Jetter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FDC6571CFB0CF300FA41F6 /* Build configuration list for PBXNativeTarget "Air Jetter" */;
+			buildPhases = (
+				98FDC6391CFB0CF300FA41F6 /* Sources */,
+				98FDC63A1CFB0CF300FA41F6 /* Frameworks */,
+				98FDC63B1CFB0CF300FA41F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Air Jetter";
+			productName = "Air Jetter";
+			productReference = 98FDC63D1CFB0CF300FA41F6 /* Air Jetter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98FDC6351CFB0CF300FA41F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Egor Bakaykin";
+				TargetAttributes = {
+					98FDC63C1CFB0CF300FA41F6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 98FDC6381CFB0CF300FA41F6 /* Build configuration list for PBXProject "Air Jetter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98FDC6341CFB0CF300FA41F6;
+			productRefGroup = 98FDC63E1CFB0CF300FA41F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98FDC63C1CFB0CF300FA41F6 /* Air Jetter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98FDC63B1CFB0CF300FA41F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FDC6531CFB0CF300FA41F6 /* LaunchScreen.storyboard in Resources */,
+				98FDC6501CFB0CF300FA41F6 /* Assets.xcassets in Resources */,
+				98FDC64B1CFB0CF300FA41F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98FDC6391CFB0CF300FA41F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FDC64E1CFB0CF300FA41F6 /* Air_Jetter.xcdatamodeld in Sources */,
+				98FDC6481CFB0CF300FA41F6 /* ViewController.m in Sources */,
+				98FDC6451CFB0CF300FA41F6 /* AppDelegate.m in Sources */,
+				98FDC6421CFB0CF300FA41F6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98FDC6491CFB0CF300FA41F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98FDC64A1CFB0CF300FA41F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98FDC6511CFB0CF300FA41F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98FDC6521CFB0CF300FA41F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98FDC6551CFB0CF300FA41F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98FDC6561CFB0CF300FA41F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98FDC6581CFB0CF300FA41F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Air Jetter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egorbakaykin.Air-Jetter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98FDC6591CFB0CF300FA41F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Air Jetter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egorbakaykin.Air-Jetter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98FDC6381CFB0CF300FA41F6 /* Build configuration list for PBXProject "Air Jetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FDC6551CFB0CF300FA41F6 /* Debug */,
+				98FDC6561CFB0CF300FA41F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FDC6571CFB0CF300FA41F6 /* Build configuration list for PBXNativeTarget "Air Jetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FDC6581CFB0CF300FA41F6 /* Debug */,
+				98FDC6591CFB0CF300FA41F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		98FDC64C1CFB0CF300FA41F6 /* Air_Jetter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				98FDC64D1CFB0CF300FA41F6 /* Air_Jetter.xcdatamodel */,
+			);
+			currentVersion = 98FDC64D1CFB0CF300FA41F6 /* Air_Jetter.xcdatamodel */;
+			path = Air_Jetter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 98FDC6351CFB0CF300FA41F6 /* Project object */;
+}
