@@ -74,6 +74,7 @@
     Category* category = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     cell.textLabel.text = [category.name description];
+    cell.textLabel.textColor = [UIColor whiteColor];
 }
 
 #pragma mark - UITableViewDelegate

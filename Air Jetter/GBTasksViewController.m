@@ -149,6 +149,7 @@
     } else {
         cell.alarmView.image = [UIImage imageNamed: @"Times and Dates.png"];
     }
+    
     if (!task.priority || [task.priority integerValue] == 0) {
         cell.statusTaskImageView.image = nil;
     } else {
