@@ -49,7 +49,7 @@
     // add iCloud observers
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(storesWillChange) name:NSPersistentStoreCoordinatorStoresWillChangeNotification object:[GBDataManager sharedManager].persistentStoreCoordinator];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(storesDidChange) name:NSPersistentStoreCoordinatorStoresDidChangeNotification object:[GBDataManager sharedManager].persistentStoreCoordinator];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(storesDidChange:) name:NSPersistentStoreCoordinatorStoresDidChangeNotification object:[GBDataManager sharedManager].persistentStoreCoordinator];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mergeContent:) name:NSPersistentStoreDidImportUbiquitousContentChangesNotification object:[GBDataManager sharedManager].persistentStoreCoordinator];
 }
@@ -101,9 +101,39 @@
     }
 }
 
-- (void) storesDidChange {
+- (void) storesDidChange: (NSNotification *) notification {
     
     NSLog(@"\n\nStrores DID change notifocation recivedn\n\n");
+    
+    _fetchedResultsController = nil;
+    [self fetchedResultsController];
+    
+    // why did my stores change?
+    NSNumber *transitionType = [notification.userInfo objectForKey:NSPersistentStoreUbiquitousTransitionTypeKey];
+    int theReason = [transitionType intValue];
+    
+    switch (theReason) {
+        case NSPersistentStoreUbiquitousTransitionTypeAccountAdded: {
+            
+            // an iCloud account was added
+        }
+            break;
+        case NSPersistentStoreUbiquitousTransitionTypeAccountRemoved: {
+            
+            // an iCloud account was removed
+        }
+        case NSPersistentStoreUbiquitousTransitionTypeContentRemoved: {
+            
+            // content was removed
+        }
+        case NSPersistentStoreUbiquitousTransitionTypeInitialImportCompleted: {
+            
+            // initial import completed
+        }
+            
+        default:
+            break;
+    }
     
     [[UIApplication sharedApplication] endIgnoringInteractionEvents];
     

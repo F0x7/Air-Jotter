@@ -93,8 +93,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysy-2r-YBB">
-                                <rect key="frame" x="20" y="556" width="82" height="24"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysy-2r-YBB">
+                                <rect key="frame" x="20" y="556" width="27" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="SLi-Xa-4mM"/>
                                 </constraints>
