@@ -70,7 +70,7 @@
 #pragma mark - UITableViewDataSource
 
 - (void) configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    
+
     Category* category = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     cell.textLabel.text = [category.name description];

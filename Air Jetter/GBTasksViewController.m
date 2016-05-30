@@ -160,14 +160,6 @@
     return 50;
 }
 
-- (UIImage *)imageWithImage:(UIImage *)image convertToSize:(CGSize)size {
-    UIGraphicsBeginImageContext(size);
-    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
-    UIImage *destImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return destImage;
-}
-
 - (void) configureCell:(GBTaskCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
     Task* task  = [self.fetchedResultsController objectAtIndexPath:indexPath];
@@ -176,6 +168,7 @@
     
     if (![task.timeStamp description] || [task.timeStamp compare:[NSDate date]] == NSOrderedAscending) {
         cell.alarmView.image = nil;
+        
     } else {
         cell.alarmView.image = [UIImage imageNamed: @"Times and Dates.png"];
     }
@@ -340,6 +333,13 @@
             
             [[[GBDataManager sharedManager] managedObjectContext] deleteObject:task];
             [[[GBDataManager sharedManager] managedObjectContext] save:&error];
+            
+            NSArray *localNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
+            if (localNotifications.count > 0) {
+                UILocalNotification *localNotification = [localNotifications objectAtIndex:[me.tableView indexPathForCell:sender].row];
+                [[UIApplication sharedApplication] cancelLocalNotification:localNotification];
+                NSLog(@"Delete local notification with date %@", [localNotification fireDate]);
+            }
             
             return YES;
         }];

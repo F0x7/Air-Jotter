@@ -20,34 +20,38 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YRi-6n-npX" id="rAo-8B-FXe">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redPin.png" translatesAutoresizingMaskIntoConstraints="NO" id="GZd-Ja-KhR">
                                             <rect key="frame" x="8" y="15" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="O4u-kb-xQf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Times and Dates.png" translatesAutoresizingMaskIntoConstraints="NO" id="RDX-RK-Eyz">
+                                            <rect key="frame" x="557" y="7" width="35" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="35" id="5za-95-jW9"/>
+                                            </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhT-dd-YQD">
-                                            <rect key="frame" x="36" y="15" width="76" height="20"/>
+                                            <rect key="frame" x="36" y="15" width="513" height="20"/>
                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Times and Dates.png" translatesAutoresizingMaskIntoConstraints="NO" id="RDX-RK-Eyz">
-                                            <rect key="frame" x="557" y="7" width="35" height="35"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="K6R-6a-OTZ"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="top" secondItem="UhT-dd-YQD" secondAttribute="top" id="Crw-RX-Sqj"/>
-                                        <constraint firstItem="RDX-RK-Eyz" firstAttribute="trailing" secondItem="rAo-8B-FXe" secondAttribute="trailingMargin" id="NL3-dv-cbL"/>
-                                        <constraint firstItem="RDX-RK-Eyz" firstAttribute="top" secondItem="rAo-8B-FXe" secondAttribute="topMargin" constant="-1" id="ORp-zj-S1d"/>
-                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="leading" secondItem="GZd-Ja-KhR" secondAttribute="trailing" constant="8" symbolic="YES" id="RPs-qE-vSI"/>
-                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="bottom" secondItem="UhT-dd-YQD" secondAttribute="bottom" id="c3A-OV-gDf"/>
-                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="leading" secondItem="rAo-8B-FXe" secondAttribute="leadingMargin" id="cRW-Z9-njh"/>
-                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="centerY" secondItem="RDX-RK-Eyz" secondAttribute="centerY" id="hWx-HW-bci"/>
-                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="centerY" secondItem="rAo-8B-FXe" secondAttribute="centerY" id="s7L-ky-vIS"/>
+                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="centerY" secondItem="RDX-RK-Eyz" secondAttribute="centerY" id="0to-Q6-17A"/>
+                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="bottom" secondItem="UhT-dd-YQD" secondAttribute="bottom" id="9Ky-Gz-kji"/>
+                                        <constraint firstItem="RDX-RK-Eyz" firstAttribute="top" secondItem="rAo-8B-FXe" secondAttribute="topMargin" constant="-1" id="9Um-Es-nDS"/>
+                                        <constraint firstItem="RDX-RK-Eyz" firstAttribute="leading" secondItem="UhT-dd-YQD" secondAttribute="trailing" constant="8" symbolic="YES" id="Gmo-Jp-xaM"/>
+                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="centerY" secondItem="rAo-8B-FXe" secondAttribute="centerY" id="Jlo-eI-m3F"/>
+                                        <constraint firstItem="RDX-RK-Eyz" firstAttribute="trailing" secondItem="rAo-8B-FXe" secondAttribute="trailingMargin" id="es0-EF-mlQ"/>
+                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="leading" secondItem="rAo-8B-FXe" secondAttribute="leadingMargin" id="nPw-LW-Sck"/>
+                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="top" secondItem="UhT-dd-YQD" secondAttribute="top" id="wHX-gF-ud5"/>
+                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="leading" secondItem="GZd-Ja-KhR" secondAttribute="trailing" constant="8" symbolic="YES" id="z96-BW-tyv"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.97818031546616047" blue="0.78560443234909827" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,7 +83,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2aF-cS-sdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="221.99999999999994" y="368.99999999999989"/>
+            <point key="canvasLocation" x="221" y="368"/>
         </scene>
         <!--Note-->
         <scene sceneID="A0z-oi-qIy">
@@ -162,13 +166,14 @@
                         <outlet property="canselButtonOutlet" destination="pgf-uU-JPG" id="yvl-9E-RC5"/>
                         <outlet property="categoryButtonOutlet" destination="Ysy-2r-YBB" id="dR1-jA-oCn"/>
                         <outlet property="priorityButtonOutlet" destination="Ah7-RW-MFf" id="TDh-VB-gsQ"/>
+                        <outlet property="remindeButtonOutlet" destination="ezt-Te-xBO" id="b4B-8c-FvH"/>
                         <outlet property="saveButtonOutlet" destination="Z6g-BN-aWV" id="mWp-Xb-mcD"/>
                         <outlet property="textField" destination="PkF-hb-AxX" id="R3D-ME-xT4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcQ-7G-e2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1027" y="369"/>
+            <point key="canvasLocation" x="993" y="368"/>
         </scene>
         <!--Set date-->
         <scene sceneID="QHZ-Uw-uQr">
@@ -263,13 +268,13 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uwE-Rz-kHD" id="8h4-u0-xJU">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="All Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="57y-gi-ZWs">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -290,7 +295,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Important Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cF6-8K-Rpn">
                                             <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -305,13 +310,13 @@
                                 <rect key="frame" x="0.0" y="116" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1wp-8w-D3A" id="H7r-o7-cAy">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4uI-lI-zHy">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -326,13 +331,13 @@
                                 <rect key="frame" x="0.0" y="160" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UCK-k9-jhv" id="4gS-UC-Nf5">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fg7-m6-FYc">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -347,13 +352,13 @@
                                 <rect key="frame" x="0.0" y="204" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8if-zV-Efi" id="BC9-Ic-MA0">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CJJ-tx-QLC">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
