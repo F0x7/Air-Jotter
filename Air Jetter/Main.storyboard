@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vd7-Cx-itP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vd7-Cx-itP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -13,7 +13,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" id="Um8-JN-boc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.97818031549999995" blue="0.78560443229999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.94383665518165782" blue="0.63235649559392837" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GBTaskCell" rowHeight="50" id="YRi-6n-npX" customClass="GBTaskCell">
@@ -23,11 +23,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redPin.png" translatesAutoresizingMaskIntoConstraints="NO" id="GZd-Ja-KhR">
-                                            <rect key="frame" x="8" y="15" width="20" height="20"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="20" id="O4u-kb-xQf"/>
-                                            </constraints>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinR.png" translatesAutoresizingMaskIntoConstraints="NO" id="GZd-Ja-KhR">
+                                            <rect key="frame" x="8" y="7" width="35" height="35"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Times and Dates.png" translatesAutoresizingMaskIntoConstraints="NO" id="RDX-RK-Eyz">
                                             <rect key="frame" x="557" y="7" width="35" height="35"/>
@@ -36,25 +33,27 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhT-dd-YQD">
-                                            <rect key="frame" x="36" y="15" width="513" height="20"/>
-                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                            <rect key="frame" x="51" y="8" width="498" height="35"/>
+                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="centerY" secondItem="RDX-RK-Eyz" secondAttribute="centerY" id="0to-Q6-17A"/>
-                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="bottom" secondItem="UhT-dd-YQD" secondAttribute="bottom" id="9Ky-Gz-kji"/>
+                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="leading" secondItem="GZd-Ja-KhR" secondAttribute="trailing" constant="8" symbolic="YES" id="4yz-Cu-hc0"/>
                                         <constraint firstItem="RDX-RK-Eyz" firstAttribute="top" secondItem="rAo-8B-FXe" secondAttribute="topMargin" constant="-1" id="9Um-Es-nDS"/>
-                                        <constraint firstItem="RDX-RK-Eyz" firstAttribute="leading" secondItem="UhT-dd-YQD" secondAttribute="trailing" constant="8" symbolic="YES" id="Gmo-Jp-xaM"/>
-                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="centerY" secondItem="rAo-8B-FXe" secondAttribute="centerY" id="Jlo-eI-m3F"/>
+                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="centerY" secondItem="rAo-8B-FXe" secondAttribute="centerY" id="ChX-02-Q3P"/>
+                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="centerY" secondItem="rAo-8B-FXe" secondAttribute="centerY" id="FT8-kq-vCf"/>
+                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="bottom" secondItem="RDX-RK-Eyz" secondAttribute="bottom" id="JqW-9q-I4Y"/>
+                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="top" secondItem="RDX-RK-Eyz" secondAttribute="top" id="Qxp-xI-feM"/>
                                         <constraint firstItem="RDX-RK-Eyz" firstAttribute="trailing" secondItem="rAo-8B-FXe" secondAttribute="trailingMargin" id="es0-EF-mlQ"/>
-                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="leading" secondItem="rAo-8B-FXe" secondAttribute="leadingMargin" id="nPw-LW-Sck"/>
-                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="top" secondItem="UhT-dd-YQD" secondAttribute="top" id="wHX-gF-ud5"/>
-                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="leading" secondItem="GZd-Ja-KhR" secondAttribute="trailing" constant="8" symbolic="YES" id="z96-BW-tyv"/>
+                                        <constraint firstItem="RDX-RK-Eyz" firstAttribute="leading" secondItem="UhT-dd-YQD" secondAttribute="trailing" constant="8" symbolic="YES" id="g53-9H-9QV"/>
+                                        <constraint firstItem="GZd-Ja-KhR" firstAttribute="leading" secondItem="rAo-8B-FXe" secondAttribute="leadingMargin" id="is8-mZ-N9A"/>
+                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="top" secondItem="rAo-8B-FXe" secondAttribute="topMargin" id="w95-gp-eQW"/>
+                                        <constraint firstItem="UhT-dd-YQD" firstAttribute="centerX" secondItem="rAo-8B-FXe" secondAttribute="centerX" id="yQX-3m-Aqk"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="0.97818031546616047" blue="0.78560443234909827" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.94383665520000004" blue="0.63235649559999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="alarmView" destination="RDX-RK-Eyz" id="RR7-T4-1J7"/>
                                     <outlet property="nameLable" destination="UhT-dd-YQD" id="4he-Rv-Bh0"/>
@@ -98,19 +97,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysy-2r-YBB">
-                                <rect key="frame" x="20" y="556" width="27" height="24"/>
+                                <rect key="frame" x="20" y="550" width="62" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="SLi-Xa-4mM"/>
+                                    <constraint firstAttribute="height" constant="30" id="SLi-Xa-4mM"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="25" maxY="0.0"/>
                                 <state key="normal" image="Top_Charts.png"/>
                                 <connections>
                                     <segue destination="wv7-tb-vqg" kind="show" identifier="categorySegue" id="8UE-uA-PK4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ah7-RW-MFf">
-                                <rect key="frame" x="272" y="544" width="55" height="33"/>
+                                <rect key="frame" x="274" y="544" width="52" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" image="pinOff.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -124,11 +125,12 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezt-Te-xBO">
-                                <rect key="frame" x="540" y="544" width="40" height="36"/>
+                                <rect key="frame" x="518" y="550" width="62" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="jeq-zm-KAb"/>
+                                    <constraint firstAttribute="width" constant="62" id="jeq-zm-KAb"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Times and Dates.png"/>
+                                <inset key="contentEdgeInsets" minX="-14" minY="0.0" maxX="-25" maxY="0.0"/>
+                                <state key="normal" image="Alarm.png"/>
                                 <connections>
                                     <segue destination="eTs-rY-hP0" kind="show" identifier="dateSegue" id="Byo-wC-GKj"/>
                                 </connections>
@@ -136,12 +138,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97818031549999995" blue="0.78560443229999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Ysy-2r-YBB" firstAttribute="top" secondItem="PkF-hb-AxX" secondAttribute="bottom" constant="14" id="4Q6-gT-fXo"/>
+                            <constraint firstItem="Ysy-2r-YBB" firstAttribute="top" secondItem="PkF-hb-AxX" secondAttribute="bottom" constant="8" id="4Q6-gT-fXo"/>
                             <constraint firstAttribute="bottom" secondItem="Ysy-2r-YBB" secondAttribute="bottom" constant="20" symbolic="YES" id="9l8-ZK-L6r"/>
                             <constraint firstItem="PkF-hb-AxX" firstAttribute="trailing" secondItem="RAx-uf-fdD" secondAttribute="trailingMargin" id="9lv-bk-fhQ"/>
                             <constraint firstItem="PkF-hb-AxX" firstAttribute="leading" secondItem="RAx-uf-fdD" secondAttribute="leadingMargin" id="D0y-SG-MLC"/>
                             <constraint firstItem="PkF-hb-AxX" firstAttribute="leading" secondItem="Ysy-2r-YBB" secondAttribute="leading" id="MQX-Mm-tuy"/>
-                            <constraint firstItem="ezt-Te-xBO" firstAttribute="top" secondItem="Ah7-RW-MFf" secondAttribute="top" id="Mh7-aF-hha"/>
+                            <constraint firstItem="ezt-Te-xBO" firstAttribute="top" secondItem="Ah7-RW-MFf" secondAttribute="top" constant="6" id="Mh7-aF-hha"/>
                             <constraint firstItem="ezt-Te-xBO" firstAttribute="bottom" secondItem="Ysy-2r-YBB" secondAttribute="bottom" id="WCZ-yS-aXE"/>
                             <constraint firstItem="ezt-Te-xBO" firstAttribute="trailing" secondItem="PkF-hb-AxX" secondAttribute="trailing" id="XQl-rd-exQ"/>
                             <constraint firstItem="PkF-hb-AxX" firstAttribute="centerX" secondItem="Ah7-RW-MFf" secondAttribute="centerX" id="YSx-c4-qvP"/>
@@ -262,31 +264,10 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zZj-zf-eL6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.28822361689999998" blue="0.53026832459999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="first" textLabel="57y-gi-ZWs" style="IBUITableViewCellStyleDefault" id="uwE-Rz-kHD">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uwE-Rz-kHD" id="8h4-u0-xJU">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="All Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="57y-gi-ZWs">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.28822361689999998" blue="0.53026832459999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <segue destination="Vyt-Pp-ALJ" kind="custom" identifier="AllNotes" customClass="SWRevealViewControllerSeguePushController" id="nZO-A2-Xle"/>
-                                </connections>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="second" textLabel="cF6-8K-Rpn" style="IBUITableViewCellStyleDefault" id="4cf-6W-tsh">
-                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4cf-6W-tsh" id="jmr-hc-Yzk">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -296,18 +277,17 @@
                                             <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.28627450980392155" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="Vyt-Pp-ALJ" kind="custom" identifier="Important" customClass="SWRevealViewControllerSeguePushController" id="Ts3-EV-Syd"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="third" textLabel="4uI-lI-zHy" style="IBUITableViewCellStyleDefault" id="1wp-8w-D3A">
-                                <rect key="frame" x="0.0" y="116" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="third" textLabel="4uI-lI-zHy" style="IBUITableViewCellStyleDefault" id="1wp-8w-D3A">
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1wp-8w-D3A" id="H7r-o7-cAy">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -317,17 +297,36 @@
                                             <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.28822361689999998" blue="0.53026832459999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="anY-vp-c5D" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="H6a-9J-klb"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fourth" textLabel="Fg7-m6-FYc" style="IBUITableViewCellStyleDefault" id="UCK-k9-jhv">
+                            <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="first" textLabel="57y-gi-ZWs" style="IBUITableViewCellStyleDefault" id="uwE-Rz-kHD">
+                                <rect key="frame" x="0.0" y="116" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uwE-Rz-kHD" id="8h4-u0-xJU">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="All Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="57y-gi-ZWs">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Vyt-Pp-ALJ" kind="custom" identifier="AllNotes" customClass="SWRevealViewControllerSeguePushController" id="nZO-A2-Xle"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fourth" textLabel="Fg7-m6-FYc" style="IBUITableViewCellStyleDefault" id="UCK-k9-jhv">
                                 <rect key="frame" x="0.0" y="160" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UCK-k9-jhv" id="4gS-UC-Nf5">
@@ -338,17 +337,16 @@
                                             <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.28822361689999998" blue="0.53026832459999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="Vyt-Pp-ALJ" kind="custom" identifier="Reminders" customClass="SWRevealViewControllerSeguePushController" id="f2c-KH-boM"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fifth" textLabel="CJJ-tx-QLC" style="IBUITableViewCellStyleDefault" id="8if-zV-Efi">
+                            <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fifth" textLabel="CJJ-tx-QLC" style="IBUITableViewCellStyleDefault" id="8if-zV-Efi">
                                 <rect key="frame" x="0.0" y="204" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8if-zV-Efi" id="BC9-Ic-MA0">
@@ -359,12 +357,11 @@
                                             <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.28822361689999998" blue="0.53026832459999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="Vyt-Pp-ALJ" kind="custom" identifier="Completed" customClass="SWRevealViewControllerSeguePushController" id="U7u-AC-V0q"/>
                                 </connections>
@@ -405,16 +402,16 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="OXf-g5-Ssb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.28822361689999998" blue="0.53026832459999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="qft-i6-pau">
+                            <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="qft-i6-pau">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qft-i6-pau" id="hUB-2X-X0J">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.28822361689999998" blue="0.53026832459999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -463,9 +460,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Alarm.png" width="26" height="25"/>
         <image name="Times and Dates.png" width="130" height="130"/>
         <image name="Top_Charts.png" width="27" height="24"/>
-        <image name="redPin.png" width="20" height="20"/>
+        <image name="pinOff.png" width="32" height="32"/>
+        <image name="pinR.png" width="170" height="243"/>
         <image name="reveal-icon.png" width="22" height="17"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -72,17 +72,19 @@
     if (self.task) {
         switch ([self.task.priority integerValue]) {
             case 0:
-                [self.priorityButtonOutlet setTitle:@"Hi priority ON" forState:UIControlStateNormal];
+                //[self.priorityButtonOutlet setTitle:@"Hi priority ON" forState:UIControlStateNormal];
+                [self.priorityButtonOutlet setImage:[UIImage imageNamed:@"pinON.png"] forState:UIControlStateNormal];
                 break;
             case 1:
-                [self.priorityButtonOutlet setTitle:@"Hi priority OFF" forState:UIControlStateNormal];
+                //[self.priorityButtonOutlet setTitle:@"Hi priority OFF" forState:UIControlStateNormal];
+                [self.priorityButtonOutlet setImage:[UIImage imageNamed:@"pinOff.png"] forState:UIControlStateNormal];
                 break;
                 
             default:
                 break;
         }
     } else {
-        [self.priorityButtonOutlet setTitle:@"Hi priority ON" forState:UIControlStateNormal];
+        [self.priorityButtonOutlet setImage:[UIImage imageNamed:@"pinON.png"] forState:UIControlStateNormal];
     }
 }
 
@@ -219,7 +221,7 @@
 - (IBAction)priorityButtonAction:(UIButton *)sender {
     
     if ([self.priorityButtonOutlet.titleLabel.text isEqualToString:@"Hi priority ON"]) {
-        [self.priorityButtonOutlet setTitle: @"Hi priority OFF" forState:UIControlStateNormal];
+        [self.priorityButtonOutlet setImage:[UIImage imageNamed:@"pinOff.png"] forState:UIControlStateNormal];;
         if (!self.task) {
             Task* newTask = [NSEntityDescription insertNewObjectForEntityForName:@"Task"
                                                           inManagedObjectContext:[[GBDataManager sharedManager] managedObjectContext]];
@@ -229,7 +231,7 @@
             self.task.priority = [NSNumber numberWithBool:YES];
         }
     } else {
-        [self.priorityButtonOutlet setTitle:@"Hi priority ON" forState:UIControlStateNormal];
+        [self.priorityButtonOutlet setImage:[UIImage imageNamed:@"pinON.png"] forState:UIControlStateNormal];
         self.task.priority = [NSNumber numberWithBool:NO];
     }
 }

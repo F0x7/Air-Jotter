@@ -39,6 +39,7 @@
     [self setNavigationTitle];
     
     SWRevealViewController *revealViewController = self.revealViewController;
+    
     if ( revealViewController )
     {
         [self.revelButtonItem setTarget: self.revealViewController];
@@ -54,9 +55,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mergeContent:) name:NSPersistentStoreDidImportUbiquitousContentChangesNotification object:[GBDataManager sharedManager].persistentStoreCoordinator];
 }
 
--(void) viewDidAppear:(BOOL)animated {
 
-}
 - (void) viewWillAppear:(BOOL)animated {
     [self.tableView reloadData];
     
@@ -71,6 +70,19 @@
         self.navigationItem.leftBarButtonItem = backButton;
     }
 }
+- (void) viewWillDisappear:(BOOL)animated {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:NSPersistentStoreCoordinatorStoresWillChangeNotification
+                                                  object:[GBDataManager sharedManager].persistentStoreCoordinator];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:NSPersistentStoreCoordinatorStoresDidChangeNotification
+                                                  object:[GBDataManager sharedManager].persistentStoreCoordinator];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:NSPersistentStoreDidImportUbiquitousContentChangesNotification
+                                                  object:[GBDataManager sharedManager].persistentStoreCoordinator];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -89,6 +101,7 @@
 }
 
 #pragma mark - iCloud methods
+
 - (void) storesWillChange {
     NSLog(@"\n\nStrores WILL change notifocation recivedn\n\n");
     
@@ -130,7 +143,6 @@
             
             // initial import completed
         }
-            
         default:
             break;
     }
@@ -176,7 +188,7 @@
     if (!task.priority || [task.priority integerValue] == 0) {
         cell.statusTaskImageView.image = nil;
     } else {
-        cell.statusTaskImageView.image = [UIImage imageNamed:@"redPin"];
+        cell.statusTaskImageView.image = [UIImage imageNamed:@"pinR"];
     }
     
     cell.delegate = self;
@@ -359,4 +371,5 @@
 - (void)backAction:(UIBarButtonItem *)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 @end

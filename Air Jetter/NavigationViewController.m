@@ -18,6 +18,10 @@
 }
 
 - (void)viewDidLoad {
+    
+    //self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"slideMenuBackground@2x"]];
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:
+                                     [UIImage imageNamed:@"slideMenuBGOrange"]];
     [super viewDidLoad];
 
     menu = @[@"first", @"second", @"third", @"fourth", @"fifth"];

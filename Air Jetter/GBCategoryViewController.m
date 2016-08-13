@@ -23,6 +23,8 @@
 @synthesize fetchedResultsController = _fetchedResultsController;
 
 - (void)viewDidLoad {
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:
+                                     [UIImage imageNamed:@"slideMenuBackground"]];
     [super viewDidLoad];
     
     
@@ -57,16 +59,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 #pragma mark - UITableViewDataSource
 
 - (void) configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
@@ -74,7 +66,7 @@
     Category* category = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     cell.textLabel.text = [category.name description];
-    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.font = [UIFont fontWithName:@"ChalkboardSE-Bold" size:16];
 }
 
 #pragma mark - UITableViewDelegate
